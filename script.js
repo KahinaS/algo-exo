@@ -1,5 +1,5 @@
 const tab = ["Bob", "Julien", "Roger"];
-
+//let tab =['Bob','Julien','Roger'];
 
 
 
@@ -28,22 +28,20 @@ afficherListe();
 $liste = document.getElementById("liste");
 function selectionne(e) {  
    e.target.classList.toggle("selected");
+
 }
 $liste.onclick = selectionne;
 
 function annule(){
-
-
-for (var i = tab.children.length-1; i >= 0; i--) { 
-if{
-
-($liste.children[i].classList.contains('selected'))tab.splice(i, 1)
+  for (let i = liste.children.length-1/*il manquait le -1*/ ; i >= 0; i--){
+    if (liste.children[i].classList.contains("selected")){
+      tab.splice(i, 1);
+    }
+  }
+afficherListe(); //il était pas mis au bon étage
 }
-}
 
-}
+
 afficherListe();
-
-} 
 
 
