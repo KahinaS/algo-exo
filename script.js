@@ -1,4 +1,4 @@
-const tab = ["Bob", "Julien", "Roger"];
+var tab = ["Bob", "Julien", "Roger"];
 //let tab =['Bob','Julien','Roger'];
 
 
@@ -17,7 +17,7 @@ function afficherListe(){
 
 }
 function Etape1(){
-  let nom = document.getElementById('texte').value;
+  let nom  = document.getElementById('texte').value;
   tab.push(nom);
   afficherListe();
 }
@@ -41,7 +41,19 @@ function annule(){
 afficherListe(); //il était pas mis au bon étage
 }
 
+function restaurer(){
+   tab = ["Bob" , "Julien" , "Roger"];
+  afficherListe();
+    
+}
+$(document).ready(function(){
+  var $carrousel = $('#carrousel'),  
+    $img = $('#carrousel li'), 
+    indexImg = $img.length - 1,
+    i = 0,
+    $currentImg = $img.eq(i); 
 
-afficherListe();
+});
+
 
 
