@@ -1,0 +1,10 @@
+input {
+background-color: rgb(212, 181, 186);
+font-size: 25px;
+}
+h1{
+    font-size: 30px;
+}
+.selected{
+    background-color: #88f;
+}
